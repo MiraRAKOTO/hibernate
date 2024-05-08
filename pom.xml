@@ -1,26 +1,31 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.ENI</groupId>
   <artifactId>gestionSalle</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>Projet hibernate</name>
   <description>Projet hibernate</description>
+
+  <!-- Ajoutez ces propriétés pour spécifier la version de Java utilisée -->
+  <properties>
+    <maven.compiler.source>11</maven.compiler.source> <!-- ou la version que vous utilisez -->
+    <maven.compiler.target>11</maven.compiler.target> <!-- ou la version que vous utilisez -->
+  </properties>
+
   <dependencies>
-	  <!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
-<dependency>
-    <groupId>org.postgresql</groupId>
-    <artifactId>postgresql</artifactId>
-    <version>42.4.3</version>
-</dependency>
-<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
-<dependency>
-    <groupId>org.hibernate</groupId>
-    <artifactId>hibernate-core</artifactId>
-    <version>5.6.7.Final</version>
-</dependency>
-
-
+    <!-- Dépendance PostgreSQL -->
+    <dependency>
+      <groupId>org.postgresql</groupId>
+      <artifactId>postgresql</artifactId>
+      <version>42.4.3</version>
+    </dependency>
+    <!-- Dépendance Hibernate Core -->
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-core</artifactId>
+      <version>5.6.7.Final</version>
+    </dependency>
   </dependencies>
-  
-
 </project>
